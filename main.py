@@ -172,5 +172,5 @@ redIm = cv2.imread(redPath).astype(float)
 nirIm = cv2.imread(nirPath).astype(float)
 
 output = createNDVI(redIm, nirIm)
-today = date.today()
-cv2.imwrite('OUT' + titles[selected] + today.strftime("%d/%m/%Y") +'.jp2', output)
+#today = date.today()
+cv2.imwrite('OUT' + titles[selected] + '.jp2', output)
